@@ -3,21 +3,21 @@ import styled from "styled-components"
 import { Link, withRouter } from "react-router-dom"
 import Input from './Input'
 import useInput from '../Hooks/useInput'
-import { HeartEmpty, User, Compass, Logo } from "./Icons"
+import { HeartEmpty, User, Compass, Logo, ACS } from "./Icons"
 import { useQuery } from "react-apollo-hooks"
 import { ME } from "../SharedQueries"
 
 const Header = styled.header`
     width: 100%;
     border: 0;
-    background-color: #FF9899;
+    background-color: #454F59;
     border-bottom:${props => props.theme.boxBorder}
     border-radius: 0px;
     margin-bottom: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px 0px;
+    padding: 15px 0px;
     z-index: 2;
 `
 
@@ -46,6 +46,7 @@ const SearchInput = styled(Input)`
     padding: 5px;
     font-size: 14px;
     border-radius: 3px;
+    width: 480px;
     height: auto;
     text-align: center;
     &::placeholder{
@@ -74,6 +75,7 @@ export default withRouter(({history}) => {
                 <HeaderColumn>
                     <Link to="/">
                         <Logo />
+                        <ACS />
                     </Link>
                 </HeaderColumn>
                 <HeaderColumn>

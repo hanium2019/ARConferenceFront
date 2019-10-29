@@ -4,7 +4,7 @@ const BORDER_RADIUS = "4px"
 export default {
     maxWidth: '935px',
     // bgColor: "#FAFAFA",
-    bgColor: "#FED4D3",
+    bgColor: "#efefef",
     blackColor: "#262626",
     darkGreyColor: "#999",
     lightGreyColor: "#c7c7c7",

@@ -103,13 +103,13 @@ export default ({ loading, data, logOut }) => {
             </UsernameRow>
             <Counts>
               <Count>
-                <FatText text={String(postsCount)} /> posts
+                posts <FatText text={String(postsCount)} />
               </Count>
               <Count>
-                <FatText text={String(followersCount)} /> followers
+                followers <FatText text={String(followersCount)} /> 
               </Count>
               <Count>
-                <FatText text={String(followingCount)} /> following
+                following <FatText text={String(followingCount)} /> 
               </Count>
             </Counts>
             <FullName text={fullName} />
