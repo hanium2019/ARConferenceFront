@@ -100,7 +100,10 @@ const CommentText = styled.div`
     }
 `
 
-export default({user:{username, avatar}, location, files, isLiked, likeCount, createdAt, newComment, currentItem, toggleLike, onKeyPress,comments, selfComments}) => (
+const Caption = styled.div`
+    margin: 10px;
+`
+export default({user:{username, avatar}, location, caption, files, isLiked, likeCount, createdAt, newComment, currentItem, toggleLike, onKeyPress,comments, selfComments}) => (
 <Post>
     <Header>
         <Avatar size='sm' url={avatar} />
@@ -111,6 +114,7 @@ export default({user:{username, avatar}, location, files, isLiked, likeCount, cr
             <Location>{location}</Location>
         </UserColumn>
     </Header>
+    <Caption>{caption}</Caption>
     <Files>
         {files && files.map( (file, index) =><File key={file.id} src={file.url} showing={index===currentItem}/>)}
     </Files>

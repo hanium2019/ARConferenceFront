@@ -86,7 +86,7 @@ export default ({ loading, data, logOut }) => {
     return (
       <Wrapper>
         <Helmet>
-          <title>{username} | Prismagram</title>
+          <title>{username} | ARConference</title>
         </Helmet>
         <Header>
           <HeaderColumn>

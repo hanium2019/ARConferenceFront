@@ -10,7 +10,7 @@ import { ME } from "../SharedQueries"
 const Header = styled.header`
     width: 100%;
     border: 0;
-    background-color: white;
+    background-color: #FF9899;
     border-bottom:${props => props.theme.boxBorder}
     border-radius: 0px;
     margin-bottom: 60px;
@@ -41,9 +41,8 @@ const HeaderColumn = styled.div`
         text-align: right;
     }
 `
-
 const SearchInput = styled(Input)`
-    background-color:${props => props.theme.bgColor};
+    background-color: ${props => props.theme.bgColor};
     padding: 5px;
     font-size: 14px;
     border-radius: 3px;
@@ -53,6 +52,7 @@ const SearchInput = styled(Input)`
         opacity:0.8;
         font-weight: 200;
     }
+    border-color: #DEE3E8;
 `
 
 const HeaderLink = styled(Link)`
@@ -83,17 +83,17 @@ export default withRouter(({history}) => {
                 </HeaderColumn>
                 <HeaderColumn>
                     <HeaderLink to="/explore">
-                        <Compass />
+                        <Compass fill="white"/>
                     </HeaderLink>
-                    <HeaderLink to="/notification">
-                        <HeartEmpty />
+                    <HeaderLink to="/notifications">
+                        <HeartEmpty fill="white"/>
                     </HeaderLink>
                     {!(data && data.me) ? 
                     <HeaderLink to="/#">
-                        <User />
+                        <User fill="white"/>
                     </HeaderLink>
                     : <HeaderLink to={data.me.username}>
-                        <User />
+                        <User fill="white"/>
                         </HeaderLink>
                     }
                 </HeaderColumn>
