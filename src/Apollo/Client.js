@@ -4,7 +4,7 @@ import ApolloClient, { ApolloLink } from 'apollo-boost'
 import { defaults, resolvers } from '../Apollo/LocalState'
 
 export default new ApolloClient({
-    uri: 'http://ec2-13-209-7-17.ap-northeast-2.compute.amazonaws.com:4000/graphql',
+    uri: 'http://ec2-13-209-7-17.ap-northeast-2.compute.amazonaws.com/graphql',
     clientState: {
         defaults,
         resolvers
