@@ -4,7 +4,7 @@ import ApolloClient, { ApolloLink } from 'apollo-boost'
 import { defaults, resolvers } from '../Apollo/LocalState'
 
 export default new ApolloClient({
-    uri: 'http://13.209.7.17:4000/graphql',
+    uri: 'http://13.124.58.19:4000/graphql',
     clientState: {
         defaults,
         resolvers
